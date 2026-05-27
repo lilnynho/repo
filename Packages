@@ -30,3 +30,37 @@ Description: Prevent apps (e.g. Roblox) from pausing your background music
 Author: mikey820
 Name: PleaseDontStopTheMusic
 
+Package: com.mikey820.pleasedontstopthemusic
+Version: 2.1.0
+Architecture: iphoneos-arm
+Maintainer: mikey820 <mikey820@users.noreply.github.com>
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm.deb
+Size: 24066
+MD5sum: 4a52ad4e56ca55711a1d0a900818bd95
+SHA1: 976440b7cd2af1178593063d42022f9e13c50c51
+SHA256: a0ccf2bee0738cbc9784b5b07a457917caa2dda1965337f8fc1b9e4609c5e51b
+Section: Tweaks
+Description: Prevent apps (e.g. Roblox) from pausing your background music
+Author: mikey820
+Icon: icon.png
+Name: PleaseDontStopTheMusic
+
+Package: com.mikey820.pleasedontstopthemusic
+Version: 2.1.0
+Architecture: iphoneos-arm64
+Maintainer: mikey820 <mikey820@users.noreply.github.com>
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm64.deb
+Size: 24148
+MD5sum: ae933474e61bab12566223e8150e1c2c
+SHA1: 8c5d6f9074b2f0652ff1710f819b8716f02b6e99
+SHA256: c521e628bc271f48aba495d0cc8456665ae9f2672fdc70c44cab1ab4f5bb359b
+Section: Tweaks
+Description: Prevent apps (e.g. Roblox) from pausing your background music
+Author: mikey820
+Icon: icon.png
+Name: PleaseDontStopTheMusic
+
