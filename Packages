@@ -1,38 +1,16 @@
-Package: com.mikey820.pleasedontstopthemusic
-Version: 2.2.0
+Package: com.panhethy.ccdns
+Version: 1.0
 Architecture: iphoneos-arm64
-Maintainer: mikey820 <mikey820@users.noreply.github.com>
-Installed-Size: 208
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Filename: debs/com.mikey820.pleasedontstopthemusic_2.2.0_iphoneos-arm64.deb
-Size: 38524
-MD5sum: 1eee8e2ca1e910b1f8dca003f01fbdc7
-SHA1: 8f6f3f0dbded4d39c12138b70967a0d7394c1573
-SHA256: f09a93eb71debb5f51cf0e6d6e998b77d8da6ab3aa125ff9bae9a08e70fb0540
+Maintainer: panhethy
+Installed-Size: 144
+Depends: firmware (>= 16.0)
+Filename: debs/com.panhethy.ccdns_1.0_iphoneos-arm64.deb
+Size: 54656
+MD5sum: 58f207f44de3bc1f3f9ad8f2401e784f
+SHA1: 52f216672fcf5ed83ebabe24cfd86233b305eba0
+SHA256: d5fa674dc03d6553340f1554fdc8ebffec677cd99c6a65a86c1f2ff6ceaf7dfe
 Section: Tweaks
-Description: Keep background music playing through other apps, plus a per-app volume mixer on the volume buttons
-Author: mikey820
-Icon: icon.png
-Name: PleaseDontStopTheMusic
-Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
-SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
-
-Package: com.mikey820.pleasedontstopthemusic
-Version: 2.2.0
-Architecture: iphoneos-arm
-Maintainer: mikey820 <mikey820@users.noreply.github.com>
-Installed-Size: 208
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Filename: debs/com.mikey820.pleasedontstopthemusic_2.2.0_iphoneos-arm.deb
-Size: 38428
-MD5sum: 75ad1bf30a82b2249744b715856d0c33
-SHA1: beaba49bcba8b5087c23ff916f2a03cb3c22bbe7
-SHA256: 755aa34e21eabd0c921de219b4cb1019620856866f988deb6297490ea1cf588f
-Section: Tweaks
-Description: Keep background music playing through other apps, plus a per-app volume mixer on the volume buttons
-Author: mikey820
-Icon: icon.png
-Name: PleaseDontStopTheMusic
-Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
-SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
+Description: Instant DNS switching via Control Center profiles
+Author: panhethy
+Name: CCDNS
 
