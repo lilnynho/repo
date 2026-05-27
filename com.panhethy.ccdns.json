@@ -1,0 +1,23 @@
+{
+  "class": "DepictionTabView",
+  "headerImage": "https://lilnynho.github.io/repo/banner.png",
+  "tintColor": "#5B5DE7",
+  "minVersion": "0.1",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "CCDNS",
+          "subtitle": "Instant DNS switching via Control Center",
+          "icon": "https://lilnynho.github.io/repo/CydiaIcon.png"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# CCDNS\n\nNative DNS switching directly from Control Center.\n\nCCDNS lets you instantly apply DNS profiles without opening Settings.\n\n---\n\n## Features\n\n- Native Control Center module\n- Instant DNS switching\n- Profile-based system\n- Rootless support\n- Lightweight and fast\n- iOS 16 optimized\n\n---\n\n## Compatibility\n\n- iOS 16+\n- Rootless jailbreaks\n- palera1n\n- Dopamine\n- Roothide support\n\n---\n\n## Developer\n\nCreated by lilnynho"
+        }
+      ]
+    }
+  ]
+}
