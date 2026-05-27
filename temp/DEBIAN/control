@@ -1,0 +1,13 @@
+Package: com.panhethy.ccdns
+Name: CCDNS
+Description: Instant DNS switching via Control Center profiles
+Maintainer: panhethy
+Author: panhethy
+Section: Tweaks
+Depends: firmware (>= 16.0)
+Depiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
+SileoDepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
+Icon: https://lilnynho.github.io/repo/ccdns.png
+Architecture: iphoneos-arm64
+Version: 1.0
+Installed-Size: 168

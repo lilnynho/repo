@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "CCDNS installed successfully."
+echo "Go to Settings > Control Center to enable it."
+exit 0
