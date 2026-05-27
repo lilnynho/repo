@@ -1,0 +1,16 @@
+{
+  "class": "DepictionTabView",
+  "headerImage": "https://lilnynho.github.io/repo/ccdns.png",
+  "minVersion": "0.1",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# CCDNS\n\nInstant DNS switching via Control Center profiles.\n\n- Fast DNS toggle\n- Rootless support\n- iOS 16 optimized"
+        }
+      ]
+    }
+  ]
+}

@@ -1,15 +1,25 @@
 {
-  "class": "Depiction",
-  "minVersion": "0.1",
-  "headerImage": "https://lilnynho.github.io/repo/banner.png",
-  "tintColor": "#5B5DE7",
+  "class": "DepictionTabView",
   "tabs": [
     {
-      "tabname": "Details",
+      "class": "DepictionStackView",
+      "title": "Details",
       "views": [
         {
-          "class": "DepictionWebView",
-          "URL": "https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.html"
+          "class": "DepictionHeaderView",
+          "title": "CCDNS",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "text": "Instant DNS switching via Control Center profiles"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# CCDNS\nInstant DNS switching from Control Center.\n\n- Fast switching\n- Rootless support\n- Lightweight tweak"
         }
       ]
     }
