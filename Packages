@@ -2,15 +2,18 @@ Package: com.panhethy.ccdns
 Version: 1.0
 Architecture: iphoneos-arm64
 Maintainer: panhethy
-Installed-Size: 144
+Installed-Size: 168
 Depends: firmware (>= 16.0)
 Filename: debs/com.panhethy.ccdns_1.0_iphoneos-arm64.deb
-Size: 54656
-MD5sum: 58f207f44de3bc1f3f9ad8f2401e784f
-SHA1: 52f216672fcf5ed83ebabe24cfd86233b305eba0
-SHA256: d5fa674dc03d6553340f1554fdc8ebffec677cd99c6a65a86c1f2ff6ceaf7dfe
+Size: 79944
+MD5sum: 087a93849b16e564561c8aa4303c54ed
+SHA1: 547e5a42de6330abf39895087314c3cae0805715
+SHA256: 36163e61d96c0bc9ca5ff2e06eead229088f31c45ddfc4a75cfef947ae3ba9d4
 Section: Tweaks
 Description: Instant DNS switching via Control Center profiles
 Author: panhethy
+Depiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
+Icon: https://lilnynho.github.io/repo/icon.png
 Name: CCDNS
+Sileodepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
 
