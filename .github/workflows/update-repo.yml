@@ -42,6 +42,63 @@ jobs:
           bzip2 -c9 Packages > Packages.bz2
           xz -c9 Packages > Packages.xz
 
+      - name: Generate Sileo depiction
+        run: |
+          mkdir -p depiction
+
+          README=$(gh api repos/mikey820/PleaseDontStopTheMusic/contents/README.md \
+            --jq '.content' | base64 -d)
+
+          CHANGELOG=$(gh api repos/mikey820/PleaseDontStopTheMusic/releases \
+            --jq '[.[] | "### " + .tag_name + "\n\n" + (.body // "No notes.")] | join("\n\n---\n\n")')
+
+          jq -n \
+            --arg readme "$README" \
+            --arg changelog "$CHANGELOG" \
+            '{
+              minVersion: "0.1",
+              class: "DepictionTabView",
+              tintColor: "#5B5DE7",
+              tabs: [
+                {
+                  tabname: "Details",
+                  class: "DepictionStackView",
+                  views: [
+                    {
+                      class: "DepictionMarkdownTextView",
+                      markdown: $readme,
+                      useSpacing: true
+                    }
+                  ]
+                },
+                {
+                  tabname: "Changelog",
+                  class: "DepictionStackView",
+                  views: [
+                    {
+                      class: "DepictionMarkdownTextView",
+                      markdown: $changelog,
+                      useSpacing: true
+                    }
+                  ]
+                },
+                {
+                  tabname: "Support",
+                  class: "DepictionStackView",
+                  views: [
+                    {
+                      class: "DepictionTableButtonView",
+                      title: "GitHub Repository",
+                      action: "https://github.com/mikey820/PleaseDontStopTheMusic",
+                      openExternal: true
+                    }
+                  ]
+                }
+              ]
+            }' > depiction/com.mikey820.pleasedontstopthemusic.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Update Release date
         run: |
           DATE=$(date -R)
