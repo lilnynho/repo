@@ -13,7 +13,6 @@ Section: Tweaks
 Description: Instant DNS switching via Control Center profiles
 Author: panhethy
 Depiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
-Icon: https://lilnynho.github.io/repo/icon.png
+SileoDepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
+Icon: https://lilnynho.github.io/repo/CydiaIcon.png
 Name: CCDNS
-Sileodepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
-
