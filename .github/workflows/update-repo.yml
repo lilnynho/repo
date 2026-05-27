@@ -26,6 +26,7 @@ jobs:
       - name: Download latest .deb files
         run: |
           mkdir -p debs
+          rm -f debs/*.deb
           gh release download \
             --repo mikey820/PleaseDontStopTheMusic \
             --pattern "*.deb" \
