@@ -1,0 +1,60 @@
+name: Update Repository
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [new-release]
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dpkg-dev
+        run: sudo apt-get install -y dpkg-dev
+
+      - name: Download latest .deb files
+        run: |
+          mkdir -p debs
+          gh release download \
+            --repo mikey820/PleaseDontStopTheMusic \
+            --pattern "*.deb" \
+            --dir debs \
+            --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Generate Packages index
+        run: |
+          dpkg-scanpackages --multiversion debs/ > Packages
+          gzip -c9 Packages > Packages.gz
+          bzip2 -c9 Packages > Packages.bz2
+          xz -c9 Packages > Packages.xz
+
+      - name: Update Release date
+        run: |
+          DATE=$(date -R)
+          if grep -q "^Date:" Release; then
+            sed -i "s/^Date:.*/Date: $DATE/" Release
+          else
+            echo "Date: $DATE" >> Release
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update repository [skip ci]"
+            git push
+          fi

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mikey820's Repo</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 16px;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 560px;
+      width: 100%;
+    }
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 6px; }
+    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 24px; }
+    .url-box {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #7dd3fc;
+      margin-bottom: 20px;
+      word-break: break-all;
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    a.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    a.btn:hover { opacity: 0.8; }
+    .btn-sileo { background: #5B5DE7; color: #fff; }
+    .btn-zebra { background: #1c9c4a; color: #fff; }
+    .btn-cydia { background: #3b82f6; color: #fff; }
+    h2 { font-size: 1rem; font-weight: 600; color: #aaa; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px; }
+    .package {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+    .pkg-name { font-weight: 700; font-size: 1rem; }
+    .pkg-version { font-size: 0.8rem; color: #666; margin-top: 2px; margin-bottom: 6px; }
+    .pkg-desc { font-size: 0.875rem; color: #aaa; }
+    .pkg-tags { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+    .tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: #222;
+      color: #888;
+      border: 1px solid #333;
+    }
+    footer { margin-top: 32px; font-size: 0.8rem; color: #444; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>mikey820's Repo</h1>
+    <p class="subtitle">Personal jailbreak tweak repository</p>
+
+    <div class="url-box">https://mikey820.github.io/repo/</div>
+
+    <div class="buttons">
+      <a class="btn btn-sileo" href="sileo://source/https://mikey820.github.io/repo/">Add to Sileo</a>
+      <a class="btn btn-zebra" href="zbra://sources/https://mikey820.github.io/repo/">Add to Zebra</a>
+      <a class="btn btn-cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://mikey820.github.io/repo/">Add to Cydia</a>
+    </div>
+
+    <h2>Packages</h2>
+
+    <div class="package">
+      <div class="pkg-name">PleaseDontStopTheMusic</div>
+      <div class="pkg-version">v2.0.0 &mdash; com.mikey820.pleasedontstopthemusic</div>
+      <div class="pkg-desc">Prevents apps (e.g. Roblox) from pausing your background music</div>
+      <div class="pkg-tags">
+        <span class="tag">Tweak</span>
+        <span class="tag">Rootless</span>
+        <span class="tag">Rootful</span>
+        <span class="tag">iOS 14+</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>Powered by GitHub Pages &bull; <a href="https://github.com/mikey820" style="color:#555;">github.com/mikey820</a></footer>
+</body>
+</html>
