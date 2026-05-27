@@ -1,10 +1,11 @@
 {
   "class": "DepictionTabView",
-  "tintColor": "#5B5DE7",
+  "minVersion": "0.2",
   "headerImage": "https://lilnynho.github.io/repo/banner.png",
+  "tintColor": "#5B5DE7",
   "tabs": [
     {
-      "tabname": "Details",
+      "tabname": "CCDNS",
       "views": [
         {
           "class": "DepictionHeaderView",
@@ -14,7 +15,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## CCDNS\n\nInstant DNS switching directly from Control Center.\n\n---\n\n### Features\n- Control Center toggle\n- Instant profile switching\n- Lightweight & fast\n- Rootless support\n- iOS 16 optimized\n\n---\n\n### Compatibility\n- iOS 16+\n- Dopamine / palera1n\n\n---\n\n### Developer\nMade by lilnynho"
+          "markdown": "## CCDNS\n\nInstant DNS switching via Control Center.\n\n### Features\n- Control Center toggle\n- Instant DNS profiles\n- Rootless support\n- iOS 16 optimized\n\n### Compatibility\n- iOS 16+\n- Dopamine / palera1n\n\n### Developer\nlilnynho"
         }
       ]
     }
