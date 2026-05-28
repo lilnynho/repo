@@ -2,32 +2,34 @@
   "class": "DepictionTabView",
   "headerImage": "https://lilnynho.github.io/repo/ccdns.png",
   "minVersion": "0.1",
+
   "tabs": [
     {
       "tabname": "Details",
       "views": [
         {
           "class": "DepictionHeaderView",
-          "title": "CCDNS",
-          "useBoldText": true
+          "title": "CCDNS"
         },
         {
           "class": "DepictionSubheaderView",
-          "text": "Instant DNS switching via Control Center profiles"
+          "text": "Instant DNS switching from Control Center"
         },
         {
           "class": "DepictionSeparatorView"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## CCDNS\n\nA lightweight Control Center DNS switcher.\n\n- Fast switching\n- Rootless support\n- iOS 16 optimized\n- Minimal performance impact"
-        },
+          "markdown": "### CCDNS\n\nInstant DNS switching right from Control Center.\n\n**Features:**\n- One-tap DNS switching\n- iOS 16+ support\n- Rootless support\n- Lightweight & fast"
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
         {
-          "class": "DepictionSeparatorView"
-        },
-        {
-          "class": "DepictionTextView",
-          "text": "Made for jailbreak users who want instant DNS control without opening Settings."
+          "class": "DepictionMarkdownView",
+          "markdown": "### What's New\n\n- Initial release\n- Control Center integration\n- Stability improvements"
         }
       ]
     }
