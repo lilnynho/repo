@@ -1,35 +1,88 @@
 {
   "class": "DepictionTabView",
-  "headerImage": "https://lilnynho.github.io/repo/ccdns.png",
   "minVersion": "0.1",
+
+  "headerImage": "https://lilnynho.github.io/repo/ccdns.png",
 
   "tabs": [
     {
       "tabname": "Details",
       "views": [
+
         {
           "class": "DepictionHeaderView",
           "title": "CCDNS"
         },
+
         {
           "class": "DepictionSubheaderView",
           "text": "Instant DNS switching from Control Center"
         },
+
         {
           "class": "DepictionSeparatorView"
         },
+
+        {
+          "class": "DepictionLabelView",
+          "text": "Developer: panhethy"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Version: 1.0"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Compatibility: iOS 16+ (Rootless)"
+        },
+
+        {
+          "class": "DepictionSeparatorView"
+        },
+
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### CCDNS\n\nInstant DNS switching right from Control Center.\n\n**Features:**\n- One-tap DNS switching\n- iOS 16+ support\n- Rootless support\n- Lightweight & fast"
+          "markdown": "## Overview\nCCDNS allows instant DNS switching directly from Control Center without opening Settings."
+        },
+
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## Features\n- One-tap DNS switching\n- Control Center integration\n- Lightweight system tweak\n- Rootless jailbreak support"
+        },
+
+        {
+          "class": "DepictionSeparatorView"
+        },
+
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 10,
+          "screenshots": [
+            {
+              "url": "https://lilnynho.github.io/repo/ccdns.png"
+            }
+          ]
         }
       ]
     },
+
     {
       "tabname": "Changelog",
       "views": [
+
+        {
+          "class": "DepictionHeaderView",
+          "title": "What's New"
+        },
+
         {
           "class": "DepictionMarkdownView",
-          "markdown": "### What's New\n\n- Initial release\n- Control Center integration\n- Stability improvements"
+          "markdown": "- Initial release\n- Control Center integration\n- Stability improvements"
+        },
+
+        {
+          "class": "DepictionFooterView",
+          "text": "Thanks for using CCDNS ❤️"
         }
       ]
     }
