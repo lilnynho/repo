@@ -7,7 +7,7 @@ Section: Tweaks
 Depends: firmware (>= 16.0)
 Depiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
 SileoDepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
-Icon: https://lilnynho.github.io/repo/ccdns.png
+Icon: https://lilnynho.github.io/repo/icon.png
 Architecture: iphoneos-arm64
 Version: 1.0
 Installed-Size: 168
