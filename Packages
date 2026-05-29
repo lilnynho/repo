@@ -1,19 +1,58 @@
-Package: com.panhethy.ccdns
-Version: 1.0
-Architecture: iphoneos-arm64
-Maintainer: panhethy
+Package: com.mikey820.pleasedontstopthemusic
+Version: 2.1.0
+Architecture: iphoneos-arm
+Maintainer: mikey820 <mikey820@users.noreply.github.com>
 Installed-Size: 168
-Depends: firmware (>= 16.0)
-Filename: debs/com.panhethy.ccdns_1.0_iphoneos-arm64.deb
-Size: 79946
-MD5sum: daa77e55ff61e633bb3782141795c7d6
-SHA1: 9bdbbbfee9da6de60295c3553bec6869cf8402c5
-SHA256: fd3d5c25adaba82a35e49ac5f40c581ddd96db2b7988c11494bae0d0ffcb992d
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm.deb
+Size: 24066
+MD5sum: 4a52ad4e56ca55711a1d0a900818bd95
+SHA1: 976440b7cd2af1178593063d42022f9e13c50c51
+SHA256: a0ccf2bee0738cbc9784b5b07a457917caa2dda1965337f8fc1b9e4609c5e51b
 Section: Tweaks
-Description: Instant DNS switching via Control Center profiles
-Author: panhethy
-Depiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
-Icon: https://lilnynho.github.io/repo/ccdns.png
-Name: CCDNS
-Sileodepiction: https://lilnynho.github.io/repo/depiction/com.panhethy.ccdns.json
+Description: Prevent apps (e.g. Roblox) from pausing your background music
+Author: mikey820
+Icon: icon.png
+Name: PleaseDontStopTheMusic
+Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
+SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
+
+Package: com.mikey820.pleasedontstopthemusic
+Version: 2.1.0
+Architecture: iphoneos-arm64
+Maintainer: mikey820 <mikey820@users.noreply.github.com>
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm64.deb
+Size: 24148
+MD5sum: ae933474e61bab12566223e8150e1c2c
+SHA1: 8c5d6f9074b2f0652ff1710f819b8716f02b6e99
+SHA256: c521e628bc271f48aba495d0cc8456665ae9f2672fdc70c44cab1ab4f5bb359b
+Section: Tweaks
+Description: Prevent apps (e.g. Roblox) from pausing your background music
+Author: mikey820
+Icon: icon.png
+Name: PleaseDontStopTheMusic
+Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
+SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
+
+Package: com.mikey820.pleasedontstopthemusic
+Version: 2.1.0
+Architecture: iphoneos-arm64e
+Maintainer: mikey820 <mikey820@users.noreply.github.com>
+Installed-Size: 168
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm64e.deb
+Size: 46166
+MD5sum: 4bcf7b245ca779d0d15a5aa1222c3045
+SHA1: de3beabcdc4db171a87482479f5d94440cedf853
+SHA256: fba71eadd78a7b8a534fa82da36c1b5490c2a6f5817e46932c0ac0afeec33852
+Section: Tweaks
+Description: Prevent apps (e.g. Roblox) from pausing your background music
+Author: mikey820
+Icon: icon.png
+Name: PleaseDontStopTheMusic
+Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
+SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
 
