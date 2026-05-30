@@ -1,24 +1,5 @@
 Package: com.mikey820.pleasedontstopthemusic
 Version: 2.1.0
-Architecture: iphoneos-arm
-Maintainer: mikey820 <mikey820@users.noreply.github.com>
-Installed-Size: 168
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Filename: debs/com.mikey820.pleasedontstopthemusic_2.1.0_iphoneos-arm.deb
-Size: 24070
-MD5sum: 9f1e14319e51e832df8d170b8bdb6236
-SHA1: 8c0c616c8f6eaa24de0ec78f1d6b05c62601c184
-SHA256: d472b77af18130dc92e17040fc7e91bf0249bfb857a5d7cfe7bf549ce5c6221b
-Section: Tweaks
-Description: Prevent apps (e.g. Roblox) from pausing your background music
-Author: mikey820
-Icon: icon.png
-Name: PleaseDontStopTheMusic
-Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
-SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
-
-Package: com.mikey820.pleasedontstopthemusic
-Version: 2.1.0
 Architecture: iphoneos-arm64
 Maintainer: mikey820 <mikey820@users.noreply.github.com>
 Installed-Size: 168
@@ -33,6 +14,4 @@ Description: Prevent apps (e.g. Roblox) from pausing your background music
 Author: mikey820
 Icon: icon.png
 Name: PleaseDontStopTheMusic
-Depiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.html
-SileoDepiction: https://mikey820.github.io/repo/depiction/com.mikey820.pleasedontstopthemusic.json
 
