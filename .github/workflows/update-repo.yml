@@ -1,59 +1,59 @@
 name: Update Repository
 
 on:
-workflow_dispatch:
-push:
-paths:
-- 'debs/*.deb'
-schedule:
-- cron:'0 0 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'debs/*.deb'
+  schedule:
+    - cron: '0 0 * * *'
 
 env:
-FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-update:
-runs-on: ubuntu-latest
-permissions:
-contents: write
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-steps:
-  - name: Checkout
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-  - name: Install dpkg-dev
-    run: |
-      sudo apt-get update
-      sudo apt-get install -y dpkg-dev
+      - name: Install dpkg-dev
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev
 
-  - name: Generate Packages index
-    run: |
-      dpkg-scanpackages --multiversion debs/ > Packages
-      gzip -c9 Packages > Packages.gz
-      bzip2 -c9 Packages > Packages.bz2
-      xz -c9 Packages > Packages.xz
+      - name: Generate Packages index
+        run: |
+          dpkg-scanpackages --multiversion debs/ > Packages
+          gzip -c9 Packages > Packages.gz
+          bzip2 -c9 Packages > Packages.bz2
+          xz -c9 Packages > Packages.xz
 
-  - name: Update Release date
-    run: |
-      DATE=$(date -R)
-      if [ -f Release ]; then
-        if grep -q "^Date:" Release; then
-          sed -i "s/^Date:.*/Date: $DATE/" Release
-        else
-          echo "Date: $DATE" >> Release
-        fi
-      fi
+      - name: Update Release date
+        run: |
+          DATE=$(date -R)
+          if [ -f Release ]; then
+            if grep -q "^Date:" Release; then
+              sed -i "s/^Date:.*/Date: $DATE/" Release
+            else
+              echo "Date: $DATE" >> Release
+            fi
+          fi
 
-  - name: Commit and push
-    run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      git add Packages Packages.gz Packages.bz2 Packages.xz Release
+          git add Packages Packages.gz Packages.bz2 Packages.xz Release
 
-      if git diff --staged --quiet; then
-        echo "No changes to commit"
-      else
-        git commit -m "Update repository [skip ci]"
-        git push
-      fi
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update repository [skip ci]"
+            git push
+          fi
