@@ -1,10 +1,25 @@
-Origin: lilnynho's Repo
-Label: lilnynho Repo
-Suite: stable
-Version: 1.0
-Codename: ios
-Architectures: iphoneos-arm iphoneos-arm64
-Components: main
-Description: lilnynho jailbreak tweak repository
-Icon: https://lilnynho.github.io/repo/CydiaIcon.png
-Date: Sat, 27 Jun 2026 02:11:23 +0000
+Date: Sat, 27 Jun 2026 19:38:05 +0000
+MD5Sum:
+ b39f0527cc978d7992cf7cd718debdb3              685 Packages
+ eb48bd036d2b362efe3a5bbcf0afdc0b              470 Packages.bz2
+ dfd23dd0fe11cf77235aeec203fb3b0a              421 Packages.gz
+ 2370590674d0487b81ddd7dfced915dc              484 Packages.xz
+ c1cd2e2c0d02ee48a576e14886dc0ed8               38 Release
+SHA1:
+ c1b34e662e500aa68ce7664d61ba07f8dc2932c3              685 Packages
+ 6d6101bb85fa1076b755ed9ab02768342be76652              470 Packages.bz2
+ 80625b5ce9b87c33f7cea366fd2de61c494ffebf              421 Packages.gz
+ dbcd37362890398ff37a927463178bb8e8c0be7d              484 Packages.xz
+ 61a97c92f0b0cf585b62b3034b9399bdabbf2834               38 Release
+SHA256:
+ 2720197ca590e0836daf84ee1611d23eae706f33c3ca6d7b3dcf55fea4dd07eb              685 Packages
+ f6aff198d14eb767c7fdfaf002cc24d0de5ce9d44044a72c115abf5286436367              470 Packages.bz2
+ 4777eabf1563ba20a021c504670565be8eb8ac1d2ec2ad55d33136513714269f              421 Packages.gz
+ 52dbd5d339d6aae7b960c5a673a57c9e2d7673afef0ab1f0562d3fbed00351fb              484 Packages.xz
+ b991af09adadb297e3dc26d43852bef4f698a451a92d9fe213902ee9231b9a07               38 Release
+SHA512:
+ 094e9fa6f3964db75166874b349ae68e8993a33e83d386680c34565353f0f1155c89d5cbcd02aff2cf0bcf2e601cbc877cf13544ecada26700e7c19824903e2d              685 Packages
+ 7df3f56ce1f6f853d3a4f98cb09630b6c28e47e796f2b463b62dd67948c5cfcccc4b54c43d87fa9d7b6c7a977cb65a33f8eba95823eee0b2885772fe64db31a4              470 Packages.bz2
+ e8b838aaa1e18fd7b70a4265b9d45046e9a9cd53a0812fca945f846d2c6cc8b89084c9c30ceb2c598f0866d8b9be36a79ab6243e892df8d70633455f03c35fe4              421 Packages.gz
+ 050dc7448607f4a85386798cf3abb7c76af9def3e6d06564cb6c1d1f93c8871adff9629e8c21104d986425c18b32535ef9a23e475652c2226fdcc4873ef09c99              484 Packages.xz
+ 0da0382d6991c0a05df87d4cbbe5b68c8a93b506a8f493a2bc67d3dae92973438410f07d659de311d7f031361c43850d4ae96d615c655403051dfa570271692d               38 Release
